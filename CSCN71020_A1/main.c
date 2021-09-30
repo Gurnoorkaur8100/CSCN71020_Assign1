@@ -38,7 +38,8 @@ void printOptions() {
 	printf("2. Subtract\n");
 }
 
-void add() {
+void add()
+{
 	double num1, num2, result;
 	printf("Enter the first value:");
 	scanf_s("%lf", &num1);
@@ -46,13 +47,15 @@ void add() {
 	scanf_s("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
+	exit(0);
 }
-void subtract() {
+
+void subtract()
+{
 	int num1, num2, result;
 	num1 = 0;
 	num2 = 42;
 	result = 0;
 	result = num2 - num1;
 	printf("%d - %d = %d\n", num2, num1, result);
-
 }
